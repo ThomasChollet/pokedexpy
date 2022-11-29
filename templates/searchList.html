@@ -1,0 +1,12 @@
+<div class="searchList">
+    <ul>
+        {%for i in range(0, Pokemons|length)%}
+            <li>    
+                <h1 class="pokemonName">
+                    <a href="/pokemon/{{ Pokemons[i]['name'] }}">{{ Pokemons[i]['name'] }}</a>
+                </h1>
+            </li>
+            <img src="{{ Pokemons[i]['imageUrl'] }}" />
+        {%endfor%}
+    </ul>
+</div>

@@ -1,0 +1,17 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.main_title{
+display: flex;
+justify-content: center;
+}
+
+.searchSection{
+    display: flex;
+    justify-content: center;
+}
+
+.searchButton{
+    margin-left: 10px;
+}
