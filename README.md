@@ -7,8 +7,11 @@ python -m pip install flask
 python -m pip install Flask-Assets
 ```
 
-# Lancement du serveur 
+# Lancement du serveur
+
+```
 flask run
+```
 
 
 ## Particularités
