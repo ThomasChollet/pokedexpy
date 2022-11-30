@@ -1,12 +1,17 @@
 <div class="searchList">
-    <ul>
+    <div id="searchResultsContainer">
         {%for i in range(0, Pokemons|length)%}
-            <li>    
+            <section class="pokemonCard">    
+                <div class="avatarContainer">
+                    <img class="pokemonAvatar" src="{{ Pokemons[i]['imageUrl'] }}" />
+                </div>
                 <h1 class="pokemonName">
                     <a href="/pokemon/{{ Pokemons[i]['name'] }}">{{ Pokemons[i]['name'] }}</a>
                 </h1>
-            </li>
-            <img src="{{ Pokemons[i]['imageUrl'] }}" />
+                <div class="caractLinkContainer">
+                    <a class="caractLink" href="/pokemon/{{ Pokemons[i]['name'] }}">Voir ses caractéristiques</a>
+                </div>
+            </section>
         {%endfor%}
-    </ul>
+        </div>
 </div>
